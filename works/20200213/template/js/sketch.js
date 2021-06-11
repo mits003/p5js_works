@@ -35,6 +35,7 @@ function draw() {
         rect(xOff, yOff, w * rnd, h * rnd);
         pop();
     }
+    // setTimeout('saveCanvas(canvas, "myCanvas", "png")', 2000);
 }
 
 function divideRect(x, y, w, h, min) {
