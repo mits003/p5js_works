@@ -25,15 +25,19 @@ function setup(){
     let cells = 8; // 格子の数
     let offset = width / 10;
     let margin = offset / 5;
-    let w = (width - offset * 2 - margin * (cells - 1)) / cells;
-    let h = (height - offset * 2 - margin * (cells - 1)) / cells;
+    let w = (width - offset * 2) / cells;
+    let h = (height - offset * 2) / cells;
+    // let w = (width - offset * 2 - margin * (cells - 1)) / cells;
+    // let h = (height - offset * 2 - margin * (cells - 1)) / cells;
 
     // 格子状に図形を配置する基本的な方法
     // 2重for文で縦横方向にxyの位置を計算し、その位置を基準に図形を配置する
     for (let j = 0; j < cells; j++){
         for (let i = 0; i < cells; i++){
-            let x = offset + i * (w + margin);
-            let y = offset + j * (h + margin);
+            let x = offset + i * (w );
+            let y = offset + j * (h );
+            // let x = offset + i * (w + margin);
+            // let y = offset + j * (h + margin);
             rectMode(CENTER);
 
             let cx = x + w / 2;
@@ -68,7 +72,9 @@ function setup(){
             } else if (shape_num == 3){
                 arc(-d / 2, -d / 2, d * 2, d * 2, 0, 90);
             }
-
+            strokeWeight(10);
+            point(0, 0)
+            point(w/2,h/2 )
             pop();
         }
     // saveCanvas(canvas, 'myCanvas', 'png');

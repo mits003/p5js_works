@@ -26,20 +26,22 @@ function setup(){
     let inner_cells = 3; // 格子の数
     let offset = width / 10;
     let margin = offset / 5;
-    // let w = (width - offset * 2 - margin * (cells - 1)) / cells;
-    // let h = (height - offset * 2 - margin * (cells - 1)) / cells;
+    let w = (width - offset * 2 - margin * (cells - 1)) / cells;
+    let h = (height - offset * 2 - margin * (cells - 1)) / cells;
 
     
-    let w = (width - cells) / cells;
-    let h = (height - cells) / cells;
+    // let w = (width - cells) / cells;
+    // let h = (height - cells) / cells;
 
     // 格子状に図形を配置する基本的な方法
     // 2重for文で縦横方向にxyの位置を計算し、その位置を基準に図形を配置する
     for (let j = 0; j < cells; j++){
         for (let i = 0; i < cells; i++){
-            let x = i * w;
-            let y = j * h;
+            // let x = i * w;
+            // let y = j * h;
             rectMode(CENTER);
+            let x = offset + i * (w + margin);
+            let y = offset + j * (h + margin);
 
             let cx = x + w / 2;
             let cy = y + h / 2;

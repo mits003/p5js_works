@@ -16,18 +16,20 @@ let colorsStroke = [
 ];
 
 let n = 5;
-let oR = 40;
-let flowers = 300;
+let oR = 240;
+let flowers = 1000;
 function setup() {
     // キャンバスサイズの設定
-    let canvas = createCanvas(600, 600);
+    // let canvas = createCanvas(600, 600);
+    let canvas = createCanvas(7632, 6480);
     // setTimeout('saveCanvas(canvas, "myCanvas", "png")', 1000);
     // }
 
-    background('#232323');
+    // background('#232323');
     // background('#F4FC94');
     // background('#F0C808');
     // background('#086788');
+    // background('#E7ECF2');
 
     for (i = 0; i < flowers; i++) {
         push()
@@ -36,9 +38,10 @@ function setup() {
         translate(placeX, placeY);
         rotate(random(PI))
         stroke('#fff');
-        strokeWeight(3)
+        strokeJoin(ROUND);
+        strokeWeight(8);
         fill(random(colors));
-        fill(random(colorsStroke));
+        // fill(random(colorsStroke));
         beginShape();
         for (let t = 0; t < 360; t++) {
             let A = (n / PI) * radians(t);
@@ -54,7 +57,9 @@ function setup() {
         endShape(CLOSE);
         pop()
     }
+    // setTimeout('saveCanvas(canvas, "myCanvas", "png")', 1000);
 }
+
 
 function calcH(x) {
     if (x < 0.8) {
