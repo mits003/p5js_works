@@ -25,7 +25,8 @@ function draw() {
         let r = map(points[i].x, 0, width, 50, 255);
         let g = map(points[i].y, 0, height, 50, 100);
         let b = map(points[i].x, 0, width, 25, 50);
-        fill(r, g, b);
+        let alpha = map(dist(width / 2, height/ 2, points[i].x, points[i].y), 0, 270, 400, 0)
+        fill(r, g, b, alpha);
         let angle = map(
             noise(points[i].x * mult, points[i].y * mult),
             0,
@@ -34,6 +35,9 @@ function draw() {
             720
         );
         points[i].add(createVector(cos(angle), sin(angle)));
-        ellipse(points[i].x, points[i].y, 1);
+
+        if (dist(width / 2, height/ 2, points[i].x, points[i].y) < 300){
+            ellipse(points[i].x, points[i].y, 1);
+        }
     }
 }
