@@ -1,8 +1,6 @@
-let fr = 20;
+let colors = ['#81b214', '#ffcc29', '#f58634'];
 
 let points = [];
-let inc = 0.03;
-let mult = 0.003;
 let cols, rows;
 
 let bgColors = ['#404040', '#f0eff4', '#7d98a1', ]
@@ -25,6 +23,7 @@ function setup() {
         for (let row = 0; row < rows; row++) {
             let scaled_x = col * 0.05
             let scaled_y = row * 0.05
+            // let scaled_y = row * 0.1
             let noise_val = noise(scaled_x, scaled_y)
             let angle = map(noise_val, 0, 1, 0, TWO_PI)
             let p = p5.Vector.fromAngle(angle);
@@ -38,17 +37,21 @@ function setup() {
         points.push(points_row)
     }
 
-    let step_length = 50;
-    let steps = 30;
-    let lines_num = 6000;
+    let step_length = 20;
+    let steps_num = 50;
+    let lines_num = 3000;
     noFill();
     strokeWeight(1);
     for (j = 0; j < lines_num; j++){
-        stroke(random([10, 245]));
         let x = random(0, width);
         let y = random(0, height);
+        if (j < 500){
+            stroke(random(colors));
+        }else{
+            stroke(220)
+        }
         beginShape();
-        for (let i = 0; i < steps; i ++) {
+        for (let i = 0; i < steps_num; i ++) {
             vertex(x, y);
             let x_offset = x - left_x;
             let y_offset = y - top_y;
