@@ -7,6 +7,9 @@ function setup() {
 
     // 背景色を指定
     background('#206a5d');
+}
 
-    // setTimeout('saveCanvas(canvas, "myCanvas", "png")', 1000);
+
+function mouseClicked(){
+    saveCanvas(canvas, 'myCanvas', 'png')
 }
