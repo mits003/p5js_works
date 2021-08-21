@@ -12,7 +12,7 @@ function setup(){
   colorMode(HSB, 360, 100, 100, 1.0);
   let BASE_H = random(0, 360);
   background(BASE_H, BASE_S, BASE_B);
-  texturize(BASE_H, 10000);
+  texturize(BASE_H, 30000);
 
   let circles = random(4, 8);
   let circlesCp = random(colorPalettes)
@@ -28,7 +28,7 @@ function setup(){
     circle(random(offset*2, width-offset*2), random(offset*2, height-offset*2), random(40, offset*2));
   }
 
-  stroke(BASE_H + random([-20, 20]), 90, 50, 1.0)
+  stroke(BASE_H + random([-20, 20]), 50, 50, 1.0)
   for (let j = 0; j < cells; j++){
     for (let i = 0; i < cells; i++){
         let x = offset + i * (w + margin);
