@@ -13,6 +13,7 @@ function setup() {
             // red to yellow
             let hue = map(random(i, i+50), 0, width, 0, 60);
             fill(hue, 90, 90, 0.5);
+            // fill(hue, random(80, 100), random(90, 100), 0.5);
             circle(random(0, width), i, random(30,50))
         }
     }

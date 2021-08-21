@@ -11,5 +11,6 @@ function setup() {
 
 
 function mouseClicked(){
-    saveCanvas(canvas, 'myCanvas', 'png')
+    saveCanvas(canvas, 'myCanvas', 'png');
+    window.location.reload();
 }

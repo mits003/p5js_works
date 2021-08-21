@@ -9,7 +9,9 @@ let angleSpeed = 1;
 
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    // createCanvas(windowWidth, windowHeight);
+    createCanvas(600, 600);
+
     background(255);
     cursor(CROSS);
     strokeWeight(1);
