@@ -1,9 +1,9 @@
-let cp1 = ['#486c99aa','#b0a0baaa','#c38391aa'];
-let cp2 = ['#00838faa','#d1e8f0aa','#d86d4aa6'];
-let cp3 = ['#5f0f40aa','#9a031eaa','#0f4c5caa'];
+let cp1 = ['#5f0f40aa','#9a031eaa','#fb8b24aa'];
+let cp2 = ['#0f4c5caa','#d1e8f0aa','#e36414aa'];
+let cp3 = ['#FFD692aa','#943855aa','#6E2142aa'];
 let cp4 = ['#023047aa','#ffb703aa','#fb8500aa'];
 
-let colorPalettes = [cp1, cp2, cp3, cp4]
+let colorPalettes = [cp1, cp2, cp3, cp4];
 
 let BASE_S = 30;
 let BASE_B = 40;
@@ -40,8 +40,8 @@ function setup(){
             let d = random(bw * 0.2, fw * 1.2);
             let a = random(-5, 5)
 
-            let choice = random(5);
-            if (choice < 1) {
+            let p = random(5);
+            if (p < 1) {
                 push();
                 translate(cx, cy);
                 rotate(45 + a);
@@ -52,7 +52,7 @@ function setup(){
         }
     }
 
-    stroke(BASE_H + random([-20, 20]), 20, 50, 1.0);
+    stroke(BASE_H + random([-20, 20]), 40, 25, 1.0);
     noFill();
     ellipseMode(RADIUS)
     for (let j = 0; j < fcells; j++){
@@ -70,7 +70,7 @@ function setup(){
             translate(cx, cy);
             line(0, 0, sin(theta1)*d, cos(theta1)*d);
             line(0, 0, sin(theta1 + theta2)*d, cos(theta1 + theta2)*d);
-            pop()
+            pop();
         }
     }
 }
