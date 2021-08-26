@@ -1,12 +1,12 @@
-let cp1 = ['#486c99aa','#b0a0baaa','#c38391aa'];
-let cp2 = ['#00838faa','#d1e8f0aa','#d86d4aa6'];
-let cp3 = ['#5f0f40aa','#9a031eaa','#0f4c5caa'];
-let cp4 = ['#023047aa','#ffb703aa','#fb8500aa'];
+let cp1 = ['#ce5a6abb','#e3abcabb','#B5E477bb'];
+let cp2 = ['#dd97adbb','#ddb140bb','#659400bb'];
+let cp3 = ['#2ec4b6bb','#cbf3f0bb','#FF9F1Cbb'];
+let cp4 = ['#b4bd63bb','#c8c4ebbb','#B57DB4bb'];
 
 let colorPalettes = [cp1, cp2, cp3, cp4]
 
-let BASE_S = 20;
-let BASE_B = 70;
+let BASE_S = 25;
+let BASE_B = 75;
 
 function setup(){
     createCanvas(600, 600);
@@ -20,44 +20,44 @@ function setup(){
     let cp = random(colorPalettes);
     let fcells = 10;
     let foffset = width / 15;
-    let fmargin = 0;
-    let fw = (width - foffset * 2 - fmargin * (fcells - 1)) / fcells;
-    let fh = (height - foffset * 2 - fmargin * (fcells - 1)) / fcells;
+    let fw = (width - foffset * 2 - (fcells - 1)) / fcells;
+    let fh = (height - foffset * 2 - (fcells - 1)) / fcells;
     let bcells = floor(fcells * 0.65);
     let boffset = foffset;
-    let bmargin = 0;
-    let bw = (width - boffset * 2 - bmargin * (bcells - 1)) / bcells;
-    let bh = (height - boffset * 2 - bmargin * (bcells - 1)) / bcells;
+    let bw = (width - boffset * 2 - (bcells - 1)) / bcells;
+    let bh = (height - boffset * 2 - (bcells - 1)) / bcells;
 
-    noStroke()
+    noStroke();
+    let bc = 0;
     for (let j = 0; j < bcells; j++){
         for (let i = 0; i < bcells; i++){
-            let x = boffset + (i * (bw + bmargin));
-            let y = boffset + (j * (bh + bmargin));
+            let x = boffset + (i * bw);
+            let y = boffset + (j * bh);
 
             let cx = x + bw / 2;
             let cy = y + bh / 2;
             let d = random(bw * 0.2, fw * 1.2);
             let a = random(-2, 2)
 
-            let choice = random(5);
-            if (choice < 1) {
+            let p = random(100);
+            if (p < 15 && bc < 7) {
                 push();
                 translate(cx, cy);
                 rotate(a);
                 fill(random(cp))
                 rect(random(-bw/2, bw/2), random(-bh/2, bh/2), d);
-                pop()
+                pop();
+                bc++;
             }
         }
     }
 
-    stroke(80);
+    stroke(BASE_H + random([-20, 20]), 10, 90, 1.0);
     noFill()
     for (let j = 0; j < fcells; j++){
         for (let i = 0; i < fcells; i++){
-            let x = foffset + i * (fw + fmargin);
-            let y = foffset + j * (fh + fmargin);
+            let x = foffset + i * fw;
+            let y = foffset + j * fh;
 
             let cx = x + fw / 2;
             let cy = y + fh / 2;
