@@ -20,12 +20,12 @@ function setup(){
     let cp = random(colorPalettes);
     let fcells = 10;
     let foffset = width / 15;
-    let fw = (width - foffset * 2 - (fcells - 1)) / fcells;
-    let fh = (height - foffset * 2 - (fcells - 1)) / fcells;
+    let fw = (width - foffset * 2) / fcells;
+    let fh = (height - foffset * 2) / fcells;
     let bcells = floor(fcells * 0.65);
     let boffset = foffset;
-    let bw = (width - boffset * 2 - (bcells - 1)) / bcells;
-    let bh = (height - boffset * 2 - (bcells - 1)) / bcells;
+    let bw = (width - boffset * 2) / bcells;
+    let bh = (height - boffset * 2) / bcells;
 
     noStroke();
     let bc = 0;
@@ -66,7 +66,7 @@ function setup(){
             push();
             translate(cx, cy);
             rect(0, 0, d);
-            pop()
+            pop();
         }
     }
 }
