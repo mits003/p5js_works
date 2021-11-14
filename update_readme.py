@@ -19,11 +19,12 @@ def write_readme(works_dict):
     with open(path_w, mode='w', newline='\n') as f:
         for work, imgs in works_dict.items():
             f.write(f'<h2><a href="/works/{work}/README.md">{work}</a></h2>\n')
+
+            f.write('<tr>')
             for i in range(len(imgs)):
-                if i % 4 == 0:
-                    f.write(f'\n<tr><img src="{imgs[i]}" width="30%"></tr>')
-                else:
-                    f.write(f'<tr><img src="{imgs[i]}" width="30%"></tr>')
+                f.write(f'<td><img src="{imgs[i]}" width="30%"></td>')
+            f.write('</tr>')
+
             f.write('\n')
 
 if __name__ == "__main__":
