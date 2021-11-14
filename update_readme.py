@@ -24,7 +24,7 @@ def write_readme(works_dict):
             f.write('<table>')
             f.write('<tr>')
             for i in range(len(imgs)):
-                f.write(f'<td><img src="{imgs[i]}" width="30%"></td>')
+                f.write(f'<td><img src="{imgs[i]}"></td>')
             f.write('</tr>')
             f.write('</table>')
 
