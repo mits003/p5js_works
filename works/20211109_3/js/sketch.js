@@ -6,8 +6,7 @@ let city_limit;
 let padding = 20;
 
 function preload() {
-    // boundary = loadJSON("hokkaido.geojson");
-    boundary = loadJSON("N03-21_01_210101.geojson");
+    boundary = loadJSON("hokkaido.geojson");
 }
 
 function setup() {
