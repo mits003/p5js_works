@@ -5,15 +5,15 @@
 <h2><a href="/works/libraries/README.md">libraries</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20211115/README.md">20211115</a></h2>
-<table><tr><td><img src="./works/20211115/img/image01.png" width="30%"></td></tr></table>
+<table><tr><td><img src="./works/20211115/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211114_3/README.md">20211114_3</a></h2>
-<table><tr><td><img src="./works/20211114_3/img/image02.png" width="30%"></td><td><img src="./works/20211114_3/img/image03.png" width="30%"></td><td><img src="./works/20211114_3/img/image01.png" width="30%"></td></tr></table>
+<table><tr><td><img src="./works/20211114_3/img/image02.png"></td><td><img src="./works/20211114_3/img/image03.png"></td><td><img src="./works/20211114_3/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211114_2/README.md">20211114_2</a></h2>
-<table><tr><td><img src="./works/20211114_2/img/image01.png" width="30%"></td></tr></table>
+<table><tr><td><img src="./works/20211114_2/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211114/README.md">20211114</a></h2>
-<table><tr><td><img src="./works/20211114/img/image01.png" width="30%"></td></tr></table>
+<table><tr><td><img src="./works/20211114/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211113_2/README.md">20211113_2</a></h2>
-<table><tr><td><img src="./works/20211113_2/img/image01.png" width="30%"></td></tr></table>
+<table><tr><td><img src="./works/20211113_2/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211113/README.md">20211113</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20211111/README.md">20211111</a></h2>
@@ -121,11 +121,11 @@
 <h2><a href="/works/20210410/README.md">20210410</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20201110/README.md">20201110</a></h2>
-<table><tr><td><img src="./works/20201110/img/image_01.png" width="30%"></td></tr></table>
+<table><tr><td><img src="./works/20201110/img/image_01.png"></td></tr></table>
 <h2><a href="/works/20201108/README.md">20201108</a></h2>
-<table><tr><td><img src="./works/20201108/img/image_01.png" width="30%"></td></tr></table>
+<table><tr><td><img src="./works/20201108/img/image_01.png"></td></tr></table>
 <h2><a href="/works/20200519/README.md">20200519</a></h2>
-<table><tr><td><img src="./works/20200519/img/image01.png" width="30%"></td></tr></table>
+<table><tr><td><img src="./works/20200519/img/image01.png"></td></tr></table>
 <h2><a href="/works/20200511/README.md">20200511</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20200308/README.md">20200308</a></h2>
@@ -147,4 +147,4 @@
 <h2><a href="/works/20200209_2/README.md">20200209_2</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20200209/README.md">20200209</a></h2>
-<table><tr><td><img src="./works/20200209/img/whites_in_dark.png" width="30%"></td></tr></table>
+<table><tr><td><img src="./works/20200209/img/whites_in_dark.png"></td></tr></table>
