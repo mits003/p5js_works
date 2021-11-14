@@ -8,7 +8,7 @@ let BASE_S = 35;
 let BASE_B = 75;
 
 function setup(){
-    createCanvas(windowWidth, windowWidth);
+    createCanvas(windowHeight, windowHeight);
     colorMode(HSB, 360, 100, 100, 1.0);
     let BASE_H = random(0, 360);
     background(BASE_H, BASE_S, BASE_B);
