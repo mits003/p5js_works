@@ -17,19 +17,19 @@
 <h2><a href="/works/20211113/README.md">20211113</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20211111/README.md">20211111</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20211111/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211110/README.md">20211110</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20211110/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211109_3/README.md">20211109_3</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20211109_3/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211109_2/README.md">20211109_2</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20211109_2/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211109/README.md">20211109</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20211109/img/image02.png"></td><td><img src="./works/20211109/img/image03.png"></td><td><img src="./works/20211109/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211108/README.md">20211108</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20211108/img/image02.png"></td><td><img src="./works/20211108/img/image03.png"></td><td><img src="./works/20211108/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211106_2/README.md">20211106_2</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20211106_2/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211106/README.md">20211106</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20211105_2/README.md">20211105_2</a></h2>
