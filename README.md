@@ -31,27 +31,23 @@
 <h2><a href="/works/20211106_2/README.md">20211106_2</a></h2>
 <table><tr><td><img src="./works/20211106_2/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211106/README.md">20211106</a></h2>
-<table><tr></tr></table>
-<h2><a href="/works/20211105_2/README.md">20211105_2</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20211106/img/image02.png"></td><td><img src="./works/20211106/img/image01.png"></td></tr></table>
 <h2><a href="/works/20211105/README.md">20211105</a></h2>
-<table><tr></tr></table>
-<h2><a href="/works/20210902_2/README.md">20210902_2</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20211105/img/image02.png"></td><td><img src="./works/20211105/img/image03.png"></td><td><img src="./works/20211105/img/image01.png"></td></tr></table>
 <h2><a href="/works/20210902/README.md">20210902</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210902/img/image01.png"></td></tr></table>
 <h2><a href="/works/20210826_2/README.md">20210826_2</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210826_2/img/image02.png"></td><td><img src="./works/20210826_2/img/image03.png"></td><td><img src="./works/20210826_2/img/image01.png"></td></tr></table>
 <h2><a href="/works/20210826/README.md">20210826</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210826/img/image02.png"></td><td><img src="./works/20210826/img/image03.png"></td><td><img src="./works/20210826/img/image01.png"></td></tr></table>
 <h2><a href="/works/20210823/README.md">20210823</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210823/img/image02.png"></td><td><img src="./works/20210823/img/image03.png"></td><td><img src="./works/20210823/img/image01.png"></td></tr></table>
 <h2><a href="/works/20210822_2/README.md">20210822_2</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210822_2/img/image02.png"></td><td><img src="./works/20210822_2/img/image03.png"></td><td><img src="./works/20210822_2/img/image01.png"></td></tr></table>
 <h2><a href="/works/20210822/README.md">20210822</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210822/img/image02.png"></td><td><img src="./works/20210822/img/image03.png"></td><td><img src="./works/20210822/img/image01.png"></td></tr></table>
 <h2><a href="/works/20210821/README.md">20210821</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210821/img/image02.png"></td><td><img src="./works/20210821/img/image03.png"></td><td><img src="./works/20210821/img/image01.png"></td></tr></table>
 <h2><a href="/works/20210819/README.md">20210819</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20210817/README.md">20210817</a></h2>
