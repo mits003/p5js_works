@@ -19,12 +19,12 @@ def write_readme(works_dict):
     with open(path_w, mode='w', newline='\n') as f:
         for work, imgs in works_dict.items():
             f.write(f'<h2><a href="/works/{work}/README.md">{work}</a></h2>\n')
-            for i in len(imgs):
+            for i in range(len(imgs)):
                 if i % 3 == 0:
                     f.write(f'<img src="{imgs[i]}" width="30%">\n')
                 else:
                     f.write(f'<img src="{imgs[i]}" width="30%">')
-            f.write(f'\n')
+            f.write('\n')
 
 if __name__ == "__main__":
     works_dict = get_filenames()
