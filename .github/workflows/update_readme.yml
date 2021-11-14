@@ -1,0 +1,35 @@
+name: Add works and update README.md
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+          architecture: 'x64'
+      - name: Get Python version
+        run: python -V
+      - name: Run Python
+        run: python update_readme.py
+      - name: Push to repository
+        run: |
+          git add -N .
+          if ! git diff --exit-code --quiet
+          then
+              git config --global user.name "mitsuha miyake"
+              git config --global user.email "3shinyleaves@gmail.com"
+              git add .
+              git commit -m "auto update"
+              git push origin master
+              exit 0
+          fi
+          echo "no changes"
