@@ -1,5 +1,5 @@
 // カラーパレット
-let bcpalette = ['#261E47', '#96632E', '#86473F'];
+let bcpalette = ['#261E47'];
 let stpalette = ['#DDD23B', '#A8D8B9', '#D0104C'];
 
 
@@ -26,9 +26,9 @@ function setup() {
     r2 = random(50, 100);
     a1 = 0;
     a2 = 0;
-    a1Inc = random(0.5, 4);
-    // a2Inc = floor(random(8, 12)) * a1Inc;
-    a2Inc = floor(random(8, 12));
+
+    a1Inc = floor(random(4, 120));
+    a2Inc = floor(random(4, 12));
     stroke(random(stpalette));
 }
 
