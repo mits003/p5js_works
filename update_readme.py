@@ -20,10 +20,13 @@ def write_readme(works_dict):
         for work, imgs in works_dict.items():
             f.write(f'<h2><a href="/works/{work}/README.md">{work}</a></h2>\n')
 
+            
+            f.write('<table>')
             f.write('<tr>')
             for i in range(len(imgs)):
                 f.write(f'<td><img src="{imgs[i]}" width="30%"></td>')
             f.write('</tr>')
+            f.write('</table>')
 
             f.write('\n')
 
