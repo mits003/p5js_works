@@ -1,36 +1,14 @@
 // カラーパレット
 let colors = ['#06AED5', '#086788', '#F0C808', '#E77211', '#DD1C1A'];
-let colorsStroke = [
-    '#ee59ae',
-    '#d95fbe',
-    '#c065cb',
-    '#a26cd5',
-    '#7f72da',
-    '#617cdf',
-    '#3e85df',
-    '#008cdc',
-    '#0098d6',
-    '#00a1c8',
-    '#00a7b6',
-    '#22aca3',
-];
+let bgColors = ['#232323', '#F4FC94', '#F0C808', '#086788', '#E7ECF2']
 
 let n = 5;
-let oR = 240;
-let flowers = 1000;
+let oR = 40;
+let flowers = 100;
 function setup() {
     // キャンバスサイズの設定
-    // let canvas = createCanvas(600, 600);
-    let canvas = createCanvas(7632, 6480);
-    // setTimeout('saveCanvas(canvas, "myCanvas", "png")', 1000);
-    // }
-
-    // background('#232323');
-    // background('#F4FC94');
-    // background('#F0C808');
-    // background('#086788');
-    // background('#E7ECF2');
-
+    let canvas = createCanvas(600, 600);
+    background(random(bgColors))
     for (i = 0; i < flowers; i++) {
         push()
         let placeX = random(0, width);
@@ -39,7 +17,7 @@ function setup() {
         rotate(random(PI))
         stroke('#fff');
         strokeJoin(ROUND);
-        strokeWeight(8);
+        strokeWeight(2);
         fill(random(colors));
         // fill(random(colorsStroke));
         beginShape();
@@ -57,7 +35,6 @@ function setup() {
         endShape(CLOSE);
         pop()
     }
-    // setTimeout('saveCanvas(canvas, "myCanvas", "png")', 1000);
 }
 
 
