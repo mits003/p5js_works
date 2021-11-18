@@ -16,9 +16,7 @@ let scalar;
 function setup() {
     let canvas = createCanvas(windowHeight, windowHeight);
     colors = random(colorPalette);
-    // colors = colorPalette[1];
     background(random(colors));
-    // stroke('#c1b389');
     stroke(colors[6]);
     strokeWeight(2);
     initialize();
@@ -92,6 +90,5 @@ function makeHexVector(){
 }
 
 function mouseClicked(){
-    // saveCanvas(canvas, 'myCanvas', 'png');
     window.location.reload();
 }

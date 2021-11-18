@@ -1,5 +1,7 @@
 let buffer = 30;
 
+let baseHue1, baseHue2;
+
 function setup() {
     // キャンバスサイズの設定
     let canvas = createCanvas(600, 600);
