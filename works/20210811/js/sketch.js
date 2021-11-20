@@ -7,7 +7,7 @@ let num_circles = 30;
 
 function setup() {
     // キャンバスサイズの設定
-    let canvas = createCanvas(600, 600);
+    let canvas = createCanvas(windowHeight, windowHeight);
 
     // 背景色を指定
     // background('#202020');

@@ -12,8 +12,8 @@ function setup() {
     background('#194350');
     noLoop();
 
-    colorMode(HSB)
-;
+    colorMode(HSB);
+
     let gradient = drawingContext.createLinearGradient(0,0, width,height);
     // Add three color stops
     gradient.addColorStop(0, '#8996ac');
