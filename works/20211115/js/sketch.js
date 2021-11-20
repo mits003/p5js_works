@@ -27,7 +27,7 @@ function setup() {
     drawTiling();
 }
 
-const initialize = () => {
+function initialize() {
     gLattecePoints = [];
     gBaseVectors = [];
     scalar = height * 1.0 / gNum;
@@ -52,7 +52,6 @@ function drawTiling(){
 
 function makeLattice(){
     const m = Math.ceil(gNum/gBaseVectors[1].x);
-    // for (let idRow = 0; idRow <= gNum; idRow++){
     for (let idRow = 0; idRow < gNum; idRow+=2){
         const vectorArray = [];
         for (let idColumn = 0; idColumn <= m; idColumn+=2){
@@ -95,6 +94,5 @@ function makeHexVector(){
 }
 
 function mouseClicked(){
-    // saveCanvas(canvas, 'myCanvas', 'png');
     window.location.reload();
 }
