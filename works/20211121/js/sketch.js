@@ -38,7 +38,7 @@ function setup() {
     let coords;
     let features = boundary[0].features;
 
-    for (var i = 0; i < features.length; i++) {
+    for (let i = 0; i < features.length; i++) {
         geom = features[i].geometry;
         polygons = geom.coordinates;
 
@@ -50,7 +50,7 @@ function setup() {
             let xCoords = new Array();
             let yCoords = new Array();
             beginShape();
-            for (var k = 0; k < coords.length; k++) {
+            for (let k = 0; k < coords.length; k++) {
                 let lon = coords[k][0];
                 let lat = coords[k][1];
                 let x = map(lon, -190, 190, 0+padding, width-padding);

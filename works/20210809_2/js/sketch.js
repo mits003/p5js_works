@@ -5,7 +5,7 @@ let cols, rows;
 
 let bgColors = ['#404040', '#f0eff4', '#7d98a1', ]
 function setup() {
-    let canvas = createCanvas(600, 600);
+    let canvas = createCanvas(windowWidth, windowHeight);
     noiseDetail(1);
     background(random(bgColors));
 
@@ -21,11 +21,10 @@ function setup() {
     for (let col = 0; col < cols; col++) {
         let points_row = []
         for (let row = 0; row < rows; row++) {
-            let scaled_x = col * 0.05
-            let scaled_y = row * 0.05
-            // let scaled_y = row * 0.1
-            let noise_val = noise(scaled_x, scaled_y)
-            let angle = map(noise_val, 0, 1, 0, TWO_PI)
+            let scaled_x = col * 0.05;
+            let scaled_y = row * 0.05;
+            let noise_val = noise(scaled_x, scaled_y);
+            let angle = map(noise_val, 0, 1, 0, TWO_PI);
             let p = p5.Vector.fromAngle(angle);
             p.setMag(0.1);
             points_row.push(p);
@@ -34,11 +33,11 @@ function setup() {
             // line(0, 0, p.x * 100, p.y * 100);
             // pop()
         }
-        points.push(points_row)
+        points.push(points_row);
     }
 
     let step_length = 20;
-    let steps_num = 50;
+    let steps_num = 70;
     let lines_num = 3000;
     noFill();
     strokeWeight(1);
