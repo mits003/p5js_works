@@ -1,7 +1,6 @@
 let bgcp1 = ['#eeeedd', '#c4c07e'];
 let bgcp2 = ['#d2d9e1', '#262d40'];
 let bgcp3 = ['#fdfbeb', '#95a8ad'];
-let bgcp = ['#fdfbeb', '#95a8ad'];
 let bgColorpalette = [bgcp1, bgcp2, bgcp3];
 
 let BASE_B = 60;
