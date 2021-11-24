@@ -8,7 +8,6 @@ let colors;
 
 let pointer;
 let cross;
-let box;
 
 let count = 3;
 let reps = 1000;
@@ -17,7 +16,6 @@ function setup() {
     createCanvas(600, 600);
     pointer = new Pointer;
     cross = new Cross;
-    box = new Box;
     background("#f2f2f2");
     colors = random(colorPalette);
     pc = random(colors);
