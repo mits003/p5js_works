@@ -27,27 +27,29 @@ function setup() {
     a1 = 0;
     a2 = 0;
 
-    a1Inc = floor(random(4, 120));
+    a1Inc = floor(random(4, 12));
     a2Inc = floor(random(4, 12));
     stroke(random(stpalette));
 }
 
 function draw() {
     translate(width/2, height/2);
-
-    let x1 = r1 * cos(a1);
-    let y1 = r1 * sin(a1);
-
-    let x2 = x1 + r2 * cos(a2);
-    let y2 = y1 + r2 * sin(a2);
-
-    line(x, y, x2, y2);
-
-    x = x2;
-    y = y2;
-
-    a1 += a1Inc;
-    a2 += a2Inc;
+    for (let i = 0; i < 360; i ++){
+    
+        let x1 = r1 * cos(a1);
+        let y1 = r1 * sin(a1);
+    
+        let x2 = x1 + r2 * cos(a2);
+        let y2 = y1 + r2 * sin(a2);
+    
+        line(x, y, x2, y2);
+    
+        x = x2;
+        y = y2;
+    
+        a1 += a1Inc;
+        a2 += a2Inc;
+    }
 }
 
 function mouseClicked(){
