@@ -1,7 +1,7 @@
 // カラーパレット
 let cp1 = ['#81b214', '#ffcc29', '#f58634'];
 let cp2 = ['#e24507', '#a22e8a', '#f3c800'];
-let cp3 = ['#f1bd4c', '#a43121', '#dc5f45'];
+let cp3 = ['#82add9', '#5f7c9e', '#8599b3'];
 let cp4 = ['#45996c', '#006b56', '#154228'];
 let colorPalette = [cp1, cp2, cp3, cp4];
 let colors;
@@ -10,7 +10,7 @@ let pointer;
 let cross;
 
 let count = 3;
-let reps = 1000;
+let reps = 2000;
 
 function setup() {
     createCanvas(600, 600);
@@ -22,14 +22,16 @@ function setup() {
     cc = random(colors);
     bc = random(colors);
 
+    reps = floor(random(1000, 3000))
     translate(width/2, height/2)
     for (let j = 0; j < count; j ++){
         for (let i = 0; i < reps; i ++){
-            stroke(colors[j])
+            stroke(colors[j]);
+            noFill();
             pointer.step();
             pointer.render();
             
-            stroke(colors[j])
+            stroke(colors[j]);
             cross.step();
             cross.render();
         }
@@ -43,8 +45,9 @@ class Pointer {
     }
 
     render() {
-    strokeWeight(3)
-    point(this.x, this.y);
+    strokeWeight(1)
+    // point(this.x, this.y);
+    ellipse(this.x, this.y, 5);
     }
 
     step() {
