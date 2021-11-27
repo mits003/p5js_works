@@ -63,7 +63,6 @@ function setup() {
 class Figure {
     constructor(){
         this.r = width/20;
-        // this.reps = floor(random(3, 7));
         this.reps = 120;
         this.dsp = 5;
         this.rotation = 0;
