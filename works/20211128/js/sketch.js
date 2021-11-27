@@ -21,9 +21,7 @@ function setup() {
     // 背景色を指定
     colors = random(colorPalette);
     background(colors[4]);
-    
-    
-    
+
     strokeWeight(r - 10);
     noFill();
     // noLoop();
