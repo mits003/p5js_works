@@ -1,6 +1,3 @@
-// カラーパレット
-let colors = ['#81b214', '#ffcc29', '#f58634'];
-
 let figures = [];
 
 function setup() {
