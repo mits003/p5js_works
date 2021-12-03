@@ -7,12 +7,13 @@ let theta = 90;
 let dx, dy;
 let mx, my;
 let cx, cy;
+let l = 1;
 
 function setup() {
     let canvas = createCanvas(windowHeight, windowHeight);
     background(100);
     noStroke();
-    fill(255);
+    strokeCap(SQUARE);
     
     angleMode(DEGREES);
     // セルの大きさ
@@ -25,13 +26,9 @@ function setup() {
     mx = dx/2;
     my = dy/2;
 
-    // 最初の正方形の中心座標
-    rectMode(CENTER);
-    // square(cx, cy, dx);
-
     translate(width/2, height/2);
 
-
+    
     let reps = 360 / theta
     // L字ポリゴンの内側の角の座標
     for (let j = 0; j < reps; j++){
@@ -40,22 +37,37 @@ function setup() {
             noStroke();
             cx = (i * 2 + 1) * dx;
             cy = (i * 2 + 1) * dy;
-            beginShape();
-            vertex(cx, cy);
-            vertex(cx, my);
-            vertex(cx + dx, my);
-            vertex(cx + dx, cy + dx);
-            vertex(mx, cy + dx);
-            vertex(mx, cy);
-            vertex(cx, cy);
-            endShape(CLOSE);
-
+            
+            // fill(255);
+            // beginShape();
+            // vertex(cx, cy);
+            // vertex(cx, my);
+            // vertex(cx + dx, my);
+            // vertex(cx + dx, cy + dx);
+            // vertex(mx, cy + dx);
+            // vertex(mx, cy);
+            // vertex(cx, cy);
+            // endShape(CLOSE);
+            
             stroke(200);
-            strokeWeight(3);
-            strokeCap(SQUARE);
-            line(cx + dx / 2, cy + dx / 2, cx + dx / 2, my);
-            line(cx + dx / 2, cy + dx / 2, mx, cy + dy / 2);
+            // strokeWeight(3);
+            // noFill();
+            // beginShape();
+            // vertex(cx + dx / 2, my);
+            // vertex(cx + dx / 2, cy + dy / 2);
+            // vertex(mx, cy + dy / 2);
+            // endShape()
+
+            for (let k = 0; k < 10; k ++){
+                let n = 0;
+                while (n*l < cx - mx){
+                    line(cx, cy-n*l, cx+dx, cy-n*l);
+                    line(cx-n*l, cy, cx-n*l, cy+dx);
+                    n += noise(k)*50;
+                }
+            }
         }
+
     }
 
     for (let i = 0; i < reps; i ++){
