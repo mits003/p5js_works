@@ -129,25 +129,25 @@
 <h2><a href="/works/20210715/README.md">20210715</a></h2>
 <table><tr><td><img src="./works/20210715/img/myCanvas.png"></td><td><img src="./works/20210715/img/myCanvas_02.png"></td></tr></table>
 <h2><a href="/works/20210429_2/README.md">20210429_2</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210429_2/img/myCanvas.png"></td></tr></table>
 <h2><a href="/works/20210429_1/README.md">20210429_1</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20210425/README.md">20210425</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210425/img/circle_lines_2.png"></td><td><img src="./works/20210425/img/circle_lines_3.png"></td><td><img src="./works/20210425/img/circle_lines.png"></td><td><img src="./works/20210425/img/circle_lines_1.png"></td></tr></table>
 <h2><a href="/works/20210422/README.md">20210422</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210422/img/image02.png"></td><td><img src="./works/20210422/img/image01.png"></td></tr></table>
 <h2><a href="/works/20210420/README.md">20210420</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210420/img/noised_rectangles.png"></td></tr></table>
 <h2><a href="/works/20210418/README.md">20210418</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210418/img/random_shapes.png"></td></tr></table>
 <h2><a href="/works/20210417/README.md">20210417</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210417/img/shapes_in_grids.png"></td></tr></table>
 <h2><a href="/works/20210416/README.md">20210416</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210416/img/multicircles_in_grids.png"></td></tr></table>
 <h2><a href="/works/20210415/README.md">20210415</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210415/img/multicircles_in_grids.png"></td></tr></table>
 <h2><a href="/works/20210410/README.md">20210410</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20210410/img/general_shapes_spring_color.png"></td></tr></table>
 <h2><a href="/works/20201110/README.md">20201110</a></h2>
 <table><tr><td><img src="./works/20201110/img/image_01.png"></td></tr></table>
 <h2><a href="/works/20201108/README.md">20201108</a></h2>
