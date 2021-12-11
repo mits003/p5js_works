@@ -1,9 +1,9 @@
 // カラーパレット
 let cp1 = ['#335c67','#fff3b0','#e09f3e','#9e2a2b','#540b0e'];
-let cp2 = ['#002642','#840032','#e59500','#e5dada','#02040f']
-let cp3 = ['#fb6107','#f3de2c','#7cb518','#5c8001','#fbb02d']
-let cp4 = ['#780116','#f7b538','#db7c26','#d8572a','#c32f27']
-let cp5 = ['#3a2e39','#1e555c','#f4d8cd','#edb183','#f15152']
+let cp2 = ['#002642','#840032','#e59500','#e5dada','#02040f'];
+let cp3 = ['#fb6107','#f3de2c','#7cb518','#5c8001','#fbb02d'];
+let cp4 = ['#780116','#f7b538','#db7c26','#d8572a','#c32f27'];
+let cp5 = ['#3a2e39','#1e555c','#f4d8cd','#edb183','#f15152'];
 let colorPalette = [cp1, cp2, cp3, cp4, cp5];
 let colors;
 let c = []
@@ -19,6 +19,7 @@ let r = 200;
 
 function setup() {
     let canvas = createCanvas(600, 600);
+    window
     noLoop();
     angleMode(DEGREES);
     colors = random(colorPalette);
