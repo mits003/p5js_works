@@ -37,7 +37,7 @@ function setup() {
         pop();
     }
 
-    let lines = 32;
+    let lines = random([24, 32, 48]);
     
     for (let j = 0; j < lines; j++){
         let reps = floor(random(2, 5))
