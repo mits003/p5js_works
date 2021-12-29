@@ -26,7 +26,6 @@ function setup() {
     for (let i = 0; i < colors.length; i++){
             pg = createGraphics(pgW, pgH);
             pg.fill(colors[i]);
-            pg.stroke(100);
             pg.noStroke();
             pg.rect(pgW/4, 0, pgW/2, pgH);
             getPixel(pg);
