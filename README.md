@@ -56,8 +56,6 @@
 <table><tr><td><img src="./works/20211123/img/image02.png"></td><td><img src="./works/20211123/img/image01.png"></td><td><img src="./works/20211123/img/image03.png"></td></tr></table>
 <h2><a href="/works/20211121/README.md">20211121</a></h2>
 <table><tr><td><img src="./works/20211121/img/image02.png"></td><td><img src="./works/20211121/img/image01.png"></td></tr></table>
-<h2><a href="/works/20211120_2/README.md">20211120_2</a></h2>
-<table><tr><td><img src="./works/20211120_2/img/image02.png"></td><td><img src="./works/20211120_2/img/image01.png"></td><td><img src="./works/20211120_2/img/image03.png"></td></tr></table>
 <h2><a href="/works/20211120/README.md">20211120</a></h2>
 <table><tr><td><img src="./works/20211120/img/image02.png"></td><td><img src="./works/20211120/img/image01.png"></td><td><img src="./works/20211120/img/image03.png"></td></tr></table>
 <h2><a href="/works/20211118_2/README.md">20211118_2</a></h2>
