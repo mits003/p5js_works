@@ -9,8 +9,6 @@ let colorPalette = [cp1, cp2, cp3, cp4];
 function setup() {
     // キャンバスサイズの設定
     let canvas = createCanvas(600, 600);
-
-    // 背景色を指定
     background('#fcfcfc');
     let colors = random(colorPalette)
 
