@@ -1,5 +1,3 @@
-<h2><a href="/works/template/README.md">template</a></h2>
-<table><tr></tr></table>
 <h2><a href="/works/seasonal_paper_color/README.md">seasonal_paper_color</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/libraries/README.md">libraries</a></h2>
