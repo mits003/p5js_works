@@ -16,19 +16,24 @@ function setup() {
     noStroke();
 
     let cells = 200;
-    let offset = canvasSize/100;
+    // let offset = canvasSize/100;
+    let offset = 0
     let w = (canvasSize - offset * 2) / cells;
     let h = (canvasSize - offset * 2) / cells;
 
-    for (let i = 0; i < cells; i++){
-        for  (let j = 0; j < cells; j++){
-            let ratioH = random();
-            let ratioV = random();
-            fill(random(colors));
-            if (ratioH > i/cells && ratioV > j/cells){
-                let x = offset+i*w;
-                let y = offset+j*h;
-                ellipse(x+w/2, y+h/2, w);
+    translate(random(canvasSize), random(canvasSize));
+    for (let k = 0; k < 4; k++){
+        rotate(k*PI/2);
+        for (let i = 0; i < cells; i++){
+            for  (let j = 0; j < cells; j++){
+                let ratioH = random();
+                let ratioV = random();
+                fill(random(colors));
+                if (ratioH > i/cells && ratioV > j/cells){
+                    let x = offset+i*w;
+                    let y = offset+j*h;
+                    ellipse(x+w/2, y+h/2, w);
+                }
             }
         }
     }
