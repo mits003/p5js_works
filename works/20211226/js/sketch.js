@@ -4,22 +4,19 @@ let cp2 = ['#06AED5', '#086788', '#F0C808', '#E77211', '#DD1C1A'];
 let cp3 = [ '#ee59ae', '#d95fbe', '#c065cb', '#a26cd5', '#7f72da', '#617cdf', '#3e85df', '#008cdc', '#0098d6', '#00a1c8', '#00a7b6', '#22aca3',];
 let cp4 = [ '#d87834ff', '#ee9739ff', '#ffc425ff', '#ffdd4fff', '#9dcd4fff', '#76ba4fff', '#095339ff'];
 let cp5 = ['#461220','#69212d','#8c2f39','#9f3541','#b23a48','#d77a7d','#fcb9b2','#fdc5b7','#fed0bb'];
-let cp6 = ['#7400b8','#6930c3','#5e60ce','#5390d9','#4ea8de','#48bfe3','#56cfe1','#64dfdf','#72efdd','80ffdb'];
+let cp6 = ['#7400b8','#6930c3','#5e60ce','#5390d9','#4ea8de','#48bfe3','#56cfe1','#64dfdf','#72efdd','#80ffdb'];
 let cp7 = ['#ff5400','#ff6d00','#ff8500','#ff9100','#ff9e00','#00b4d8','#0096c7','#0077b6','#023e8a','#03045e'];
 
 
 let cp = [cp1, cp2, cp3, cp4, cp5, cp6, cp7]
 
 let r;
-let figuresNum = 1;
 let figures = [];
 
 let R = 300;
 let A = 5;
 
 function setup() {
-    frameRate(1);
-    // キャンバスサイズの設定
     let canvas = createCanvas(800, 800);
     background('#232323');
 
@@ -67,7 +64,6 @@ function setup() {
     }
 
     push();
-    pgL.rotate(frameCount);
     image(pgU, 0, 0);
     image(pgL, 0, 0);
     pop();
