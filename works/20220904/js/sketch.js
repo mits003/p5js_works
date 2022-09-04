@@ -7,12 +7,9 @@ let colors;
 
 
 let cells_in = 150;
-// let cells_out = cells_in - 1;
 let cells_out = cells_in;
 
 function setup() {
-    // キャンバスサイズの設定
-    // let canvas = createCanvas(windowWidth, windowHeight);
     let canvas = createCanvas(600, 600);
     colors = random(colorPalletes)
     noLoop();
@@ -22,15 +19,6 @@ function draw(){
     // let w = max(width, height) / cells_out;
     let w = max(width, height) / cells_in;
     let h = w;
-
-    // squares.forEach((sq) => {
-    //     let c = random(colors);
-    //     noStroke();
-    //     fill(c);
-    //     // ellipse(sq.x + sq.size/2, sq.y + sq.size/2, sq.size);
-    //     rect(sq.x, sq.y, sq.size, sq.size, sq.size/4)
-    // });
-    
     for (let j = -1; j <= cells_out; j++) {
         for (let i = -1; i <= cells_out; i++) {
             let x = i * w;
