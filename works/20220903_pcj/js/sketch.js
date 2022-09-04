@@ -6,7 +6,8 @@ let cells_out = cells_in + 1;
 
 function setup() {
     // キャンバスサイズの設定
-    let canvas = createCanvas(windowWidth, windowHeight);
+    // let canvas = createCanvas(windowWidth, windowHeight);
+    let canvas = createCanvas(600, 600);
     angleMode(DEGREES)
     background(random(colors));
     noLoop();
