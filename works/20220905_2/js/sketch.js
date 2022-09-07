@@ -6,8 +6,8 @@ let colorPalletes = [cp1, cp2, cp3];
 let colors;
 
 
-let cells_in = 15;
-let cells_out = cells_in;
+let cells = 15;
+let cells = cells;
 
 function setup() {
     let canvas = createCanvas(600, 600);
@@ -16,38 +16,27 @@ function setup() {
 }
 
 function draw(){
-    let w = max(width, height) / cells_in;
+    let w = max(width, height) / cells;
     let h = w;
-    for (let j = -1; j <= cells_out; j++) {
-        for (let i = -1; i <= cells_out; i++) {
+    let ni = random(1);
+    let nj = random(1);
+    for (let j = -1; j <= cells; j++) {
+        for (let i = -1; i <= cells; i++) {
             let x = i * w;
             let y = j * h;
             let cx = x + w / 2;
             let cy = y + h / 2;
             push();
             translate(cx, cy);
-            let n = floor(map(noise(i*0.1, j*0.02), 0, 1, 0, colors.length));
-            fill(colors[n]);
-            ellipse(0, 0, w);
-            pop();
-        }
-    }
-    for (let j = -1; j <= cells_in; j++) {
-        for (let i = -1; i <= cells_in; i++) {
-            let x = i * w;
-            let y = j * h;
-            let cx = x + w / 2;
-            let cy = y + h / 2;
-            push();
-            translate(cx + w / 2, cy + h / 2);
-            let n = floor(map(noise(i*0.05, j*0.2), 0, 1, 0, colors.length));
+            let n = floor(map(noise(i*ni, j*nj), 0, 1, 0, colors.length));
             fill(colors[n]);
             noStroke();
             ellipse(0, 0, w);
+            translate(w/2, h/2);
+            ellipse(0, 0, w);
             pop();
         }
     }
-
 }
 
 function mouseClicked(){
