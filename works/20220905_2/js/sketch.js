@@ -7,7 +7,6 @@ let colors;
 
 
 let cells = 15;
-let cells = cells;
 
 function setup() {
     let canvas = createCanvas(600, 600);
