@@ -14,7 +14,7 @@ let pg;
 
 
 function setup() {
-    frameRate(60);
+    frameRate(0.5);
     createCanvas(600, 600);
     // gif出力
     // createLoop({duration:6, gif:true})
@@ -101,6 +101,7 @@ function draw(){
     pg.strokeWeight(3);
     pg.line(x, y, cxs[circles], cys[circles]);
     pg.pop();
+    console.log(cxs);
     x = cxs[circles];
     y = cys[circles];
     
