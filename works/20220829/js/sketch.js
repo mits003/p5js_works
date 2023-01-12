@@ -8,7 +8,8 @@ let colorPalette = [cp0, cp1, cp2, cp3];
 
 function setup() {
     // キャンバスサイズの設定
-    let canvas = createCanvas(600, 600);
+    pixelDensity(4);
+    let canvas = createCanvas(1500, 500);
     // let canvas = createCanvas(windowWidth, windowHeight);
 
     // 背景色を指定
@@ -17,7 +18,7 @@ function setup() {
     voronoiCellStroke('#f7f7f7');
     voronoiCellStrokeWeight(6);
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 30; i++) {
         for (let j = 0; j < 10; j++) {
             let x = i * 100;
             let y = j * 100;

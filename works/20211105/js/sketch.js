@@ -27,8 +27,8 @@ function setup() {
     a1 = 0;
     a2 = 0;
 
-    a1Inc = floor(random(4, 12));
-    a2Inc = floor(random(4, 12));
+    a1Inc = floor(random(4, 15));
+    a2Inc = floor(random(4, 15));
     stroke(random(stpalette));
 }
 
