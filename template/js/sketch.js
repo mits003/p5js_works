@@ -7,10 +7,23 @@ function setup() {
 
     // 背景色を指定
     background('#206a5d');
+
+    rSeed = int(random(seed));
+    console.log(rSeed);
+    randomSeed(rSeed);
+    noiseSeed(rSeed);
+    let colors = random(colorPalette);
 }
 
 
 function mouseClicked(){
-    saveCanvas(canvas, 'myCanvas', 'png');
     window.location.reload();
+}
+
+function keyPressed(){
+    if(key == 's'){
+        var scripts = document.getElementsByTagName("sketch").src
+        console.log(scripts)
+        saveCanvas(canvas, 'image_'+rSeed, 'png');
+    }
 }
