@@ -9,7 +9,7 @@ let seed = 4000;
 let rSeed;
 
 let monumentsNum = 10;
-let grainsNum = 50;
+let grainsNumBase = 50;
 
 function setup() {
     // キャンバスサイズの設定
@@ -31,7 +31,7 @@ function setup() {
         translate(random(100, width-100), random(100, height-100));
         stroke(random(colors));
         let r = random(10, 50);
-        for(let i = 0; i < r*grainsNum; i++){
+        for(let i = 0; i < r*grainsNumBase; i++){
             let x = randomGaussian(0, r);
             let y = randomGaussian(0, r);
             let a = atan2(y, x);
