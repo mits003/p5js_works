@@ -9,19 +9,17 @@
 <h2><a href="/works/20231001/README.md">20231001</a></h2>
 <table><tr><td><img src="./works/20231001/img/image_1024.png"></td><td><img src="./works/20231001/img/image_1452.png"></td><td><img src="./works/20231001/img/image_180.png"></td></tr></table>
 <h2><a href="/works/20230928/README.md">20230928</a></h2>
-<table><tr></tr></table>
-<h2><a href="/works/20230918/README.md">20230918</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20230928/img/image_956.png"></td><td><img src="./works/20230928/img/image_764.png"></td><td><img src="./works/20230928/img/image_621.png"></td></tr></table>
 <h2><a href="/works/20230915/README.md">20230915</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20230915/img/image_16.png"></td><td><img src="./works/20230915/img/image_16 (1).png"></td><td><img src="./works/20230915/img/image_1801.png"></td></tr></table>
 <h2><a href="/works/20230702/README.md">20230702</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20230702/img/image_650.png"></td><td><img src="./works/20230702/img/image_1281.png"></td><td><img src="./works/20230702/img/image_1627.png"></td></tr></table>
 <h2><a href="/works/20230629/README.md">20230629</a></h2>
 <table><tr><td><img src="./works/20230629/img/image_1.png"></td><td><img src="./works/20230629/img/image_1325.png"></td><td><img src="./works/20230629/img/image_405.png"></td></tr></table>
 <h2><a href="/works/20230624/README.md">20230624</a></h2>
-<table><tr><td><img src="./works/20230624/img/svg"></td></tr></table>
+<table><tr><td><img src="./works/20230624/img/image_27.png"></td><td><img src="./works/20230624/img/image_3.png"></td><td><img src="./works/20230624/img/image_102.png"></td></tr></table>
 <h2><a href="/works/20230309/README.md">20230309</a></h2>
-<table><tr></tr></table>
+<table><tr><td><img src="./works/20230309/img/image_1121.png"></td><td><img src="./works/20230309/img/image_622.png"></td><td><img src="./works/20230309/img/image_1320.png"></td></tr></table>
 <h2><a href="/works/20230224/README.md">20230224</a></h2>
 <table><tr><td><img src="./works/20230224/img/image_1603.png"></td><td><img src="./works/20230224/img/image_1417.png"></td><td><img src="./works/20230224/img/image_459.png"></td><td><img src="./works/20230224/img/image_1974.png"></td></tr></table>
 <h2><a href="/works/20230223/README.md">20230223</a></h2>
