@@ -27,9 +27,6 @@ function setup() {
   noiseSeed(rSeed);
   colors = random(colorPalette);
   strokeWeight(0.1);
-
-  // sqr = new Sqr(width, width, 0, 0, colors);
-
   noLoop();
 }
 
@@ -59,9 +56,8 @@ class Sqr {
   }
 
   createChildren() {
-    if (this.w > 20) {
-      for (let i = 0; i < 800; i++) {
-        // let color = random(colors);
+    if (this.w > 15) {
+      for (let i = 0; i < 1800; i++) {
         let sqr = new Sqr(
           this.w * random(0.1, 0.5),
           this.w,
