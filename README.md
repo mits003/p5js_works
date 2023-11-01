@@ -3,7 +3,7 @@
 <h2><a href="/works/libraries/README.md">libraries</a></h2>
 <table><tr></tr></table>
 <h2><a href="/works/20231101/README.md">20231101</a></h2>
-<table><tr><td><img src="./works/20231101/img/image_1934.png"></td><td><img src="./works/20231101/img/image_388.png"></td><td><img src="./works/20231101/img/image_31.png"></td></tr></table>
+<table><tr><td><img src="./works/20231101/img/image_1881.png"></td><td><img src="./works/20231101/img/image_139.png"></td><td><img src="./works/20231101/img/image_1002.png"></td></tr></table>
 <h2><a href="/works/20231025/README.md">20231025</a></h2>
 <table><tr><td><img src="./works/20231025/img/image_1809.png"></td><td><img src="./works/20231025/img/image_608.png"></td><td><img src="./works/20231025/img/image_74.png"></td></tr></table>
 <h2><a href="/works/20231021_2/README.md">20231021_2</a></h2>
