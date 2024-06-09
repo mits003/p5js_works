@@ -1,3 +1,4 @@
+let h = 3600;
 let boundary;
 let cities;
 let pin;
@@ -10,11 +11,12 @@ function preload() {
     // Natural Earth, ne_110m_admin_0_countries_lakes
   );
   cities = loadTable("./cities.csv", "csv", "header");
-  pin = loadImage("./location-pin_25.png");
+  // pin = loadImage("./location-pin_25.png");
+  pin = loadImage("./location-pin_128.png");
 }
 
 function setup() {
-  createCanvas(windowHeight * 1.9, windowHeight);
+  createCanvas(h * 1.9, h);
   noLoop();
 }
 function draw() {
@@ -60,7 +62,7 @@ function draw() {
     let name = cities.getString(r, "Address");
     let x = map(lon, -190, 190, 0 + padding, width - padding);
     let y = map(lat, -90, 90, height - padding, 0 + padding);
-    image(pin, x - 12.5, y - 25);
+    image(pin, x - 64, y - 120);
   }
 }
 
