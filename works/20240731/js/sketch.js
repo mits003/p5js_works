@@ -3,7 +3,7 @@ let rSeed;
 
 let start = 100;
 
-let rep = 100;
+let rep = 50;
 
 function setup() {
   // キャンバスサイズの設定
@@ -37,7 +37,8 @@ function setup() {
     }
   }
 
-  let c = random();
+  let c = floor(random(6));
+  console.log(c);
 
   for (let j = 0; j < rep; j++) {
     for (let i = 0; i < 360; i += space) {
@@ -48,37 +49,39 @@ function setup() {
       let h = map(n, 0, 1, -300, 300);
 
       let r, g, b;
-      if (c > 5 / 6) {
+
+      if (c == 0) {
         // blue and purple base
         r = map(sin(i), -1, 1, 100, 200);
         g = map(h, -150, 150, 0, 150);
         b = map(n, 0, 1, 150, 255);
-      } else if (c > 4 / 6) {
-        // pink and yello base
-        b = map(sin(i), -1, 1, 100, 200);
-        g = map(h, -150, 150, 0, 150);
-        r = map(n, 0, 1, 150, 255);
-      } else if (c > 3 / 6) {
+      } else if (c == 1) {
+        // yellow and red base
+        r = map(sin(i), -1, 1, 100, 200);
+        b = map(h, -150, 150, 0, 150);
+        g = map(n, 0, 1, 150, 255);
+      } else if (c == 2) {
         // yellow and red base
         g = map(sin(i), -1, 1, 100, 200);
         b = map(h, -150, 150, 0, 150);
         r = map(n, 0, 1, 150, 255);
-      } else if (c > 2 / 6) {
+      } else if (c == 3) {
         // yellow and red base
         g = map(sin(i), -1, 1, 100, 200);
         r = map(h, -150, 150, 0, 150);
         b = map(n, 0, 1, 150, 255);
-      } else if (1 / 6) {
-        // yellow and red base
-        r = map(sin(i), -1, 1, 100, 200);
-        b = map(h, -150, 150, 0, 150);
-        g = map(n, 0, 1, 150, 255);
-      } else {
-        // yellow and red base
-        r = map(sin(i), -1, 1, 100, 200);
-        b = map(h, -150, 150, 0, 150);
+      } else if (c == 4) {
+        // pink and yello base
+        b = map(sin(i), -1, 1, 100, 200);
+        g = map(h, -150, 150, 0, 150);
+        r = map(n, 0, 1, 150, 255);
+      } else if (c == 5) {
+        // pink and yello base
+        b = map(sin(i), -1, 1, 100, 200);
+        r = map(h, -150, 150, 0, 150);
         g = map(n, 0, 1, 150, 255);
       }
+
       rotate(space);
       noStroke();
       fill(r, g, b, 30);
