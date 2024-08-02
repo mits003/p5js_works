@@ -2,6 +2,8 @@
 <table><tr></tr></table>
 <h2><a href="/works/libraries/README.md">libraries</a></h2>
 <table><tr></tr></table>
+<h2><a href="/works/20240802_2/README.md">20240802_2</a></h2>
+<table><tr><td><img src="./works/20240802_2/img/image_179.png"></td><td><img src="./works/20240802_2/img/image_2251.png"></td><td><img src="./works/20240802_2/img/image_678.png"></td></tr></table>
 <h2><a href="/works/20240802/README.md">20240802</a></h2>
 <table><tr><td><img src="./works/20240802/img/image_2385.png"></td><td><img src="./works/20240802/img/image_155.png"></td><td><img src="./works/20240802/img/image_1946.png"></td></tr></table>
 <h2><a href="/works/20240731/README.md">20240731</a></h2>
